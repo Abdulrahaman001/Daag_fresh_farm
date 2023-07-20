@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: 'Inter' sans-serif;
+}
+
+.container {
+  width: min(100% - 9vw, 1128px);
+  margin-inline: auto;
+  /* height: 100vh; */
+}
+
+nav {
+  background-color: #111;
+  padding-block: 10px;
+  color: white;
+  height: 80px;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Inter';
+  letter-spacing: 0.5px;
+}
+
+.oracle {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.deal {
+  display: flex;
+  gap: 10px;
+}
+
+.deal a :hover {
+  color: blue;
+  background-color: #fff;
+}
+
+span a {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Inter';
+  background-color: black;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+span a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.img1 {
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-block: auto;
+  /* box-shadow: 1px -10px 3px -7px rgba(0,0,0,0.85); */
+  max-width: 100%;
+  /* background-color: whitesmoke; */
+  margin-bottom: 30vh;
+
+}
+
+.vector h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.vector p:nth-child(2){
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-family: 'Inter';
+  max-width: 85%;
+}
+
+.icon01 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.icon01 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-family: 'Inter';
+}
+
+.icon01 div {
+  display: flex;
+  gap: 20px;
+}
+
+.stick {
+  box-shadow: 5px 1px 50px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  padding: 80px;
+}
+
+footer p {
+  font-size: 16px;
+  font-family: 'Inter';
+  font-family: 200;
+}
+
+footer section {
+  border-top: 1px solid white;
+}
+.source {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  color: #fff;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .vector h1 {
+    text-align: center;
+  }
+
+  .source {
+    text-align: center;
+  }
+}
